@@ -2,7 +2,7 @@
   "name": "my-monorepo",
   "private": true,
   "scripts": {
-    "setup": "yarn build-packages && yarn generate-env && yarn setup-db && yarn seed && yarn setup-user",
+    "setup": "yarn build-packages && yarn setup-db && yarn seed && yarn setup-user",
     "dev": "turbo run dev",
     "build-packages": "turbo run build --filter ./packages/*",
     "setup-db": "cd ./apps/backend && npx medusa db:create && npx medusa db:migrate",
